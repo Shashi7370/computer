@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.smartphone {
+    position: relative;
+    width: 340px;
+    height: 580px;
+    /* margin: auto; */
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    width: 340px;
+    height: 580px;
+    background-color: #eee;
+    box-sizing: border-box;
+  }
+  .d-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card{
+      width:250px;
+      height: 300px;
+      padding: 20px;
+      background-color: white;
+  }
+  .card img{
+      width: 150px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      border: 1px solid gainsboro;
+  }
+  .card h3{
+      text-align: center;
+  }
+  .form-div{ 
+      width: 100%;
+  }
+  .form{
+      background-color: #f1f1f1;
+      padding: 25px;
+  }
+  .form label,.form input{
+      display: block;
+      margin: 10px 0;
+  }
+  .form input{
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid silver;
+  }
+  .form input:focus{
+      outline: none;
+      border: 2px solid dodgerblue;
+  }
+</style>
+<body>
+    <main class="mobile">
+        <!-- <div class="form-div d-flex">
+            <div class="mat-elevation-z1 form">
+                <label for="first">First Name</label>
+                 <input type="text"  id="first" [(ngModel)]="first">
+    
+                 <label for="last">Last Name</label>
+                 <input type="text"  id="last" [(ngModel)]="last">
+                
+                 <label for="file">Profile Photo</label>
+                 <input type="file" (change)="displayImg($event)">
+            </div>
+        </div> -->
+    
+        <div class="smartphone">
+            <div class="content d-flex">
+                <div class="card mat-elevation-z1 d-flex">
+                   <div>
+                    <img src="image.jpg" alt="" accept="image/*">
+                    <h3>Shashikant Kumaar</h3>
+                   </div>
+                </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
