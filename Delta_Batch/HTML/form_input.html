@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Element</title>
+</head>
+<body>
+    <form action="/server">
+        <!-- <input type="checkbox" id="Age" name="Age" checked/> -->
+        <input type="checkbox" id="Age" name="Age" />
+        <label for="Age"> I am 18+ </label>
+        <div>
+            <input type="radio" id="obc" name="cast" value="obc" />
+            <label for="obc">OBC</label>
+            <input type="radio" id="sc" name="cast" value="sc" />
+            <label for="sc">SC</label>
+            <input type="radio" id="st" name="cast" value="st" />
+            <label for="st">ST</label>
+            <input type="radio" id="General" name="cast" value="General" />
+            <label for="General">General</label>
+        </div>
+
+        <div>
+            Choose Your Subject :
+            <input type="checkbox" id="math" name="Sub" value="math" />
+            <label for="math"> Math </label>
+            <input type="checkbox" id="science" name="Sub" value="sci" />
+            <label for="science"> science </label>
+            <input type="checkbox" id="English" name="Sub" value="Eng" />
+            <label for="English"> English </label>
+            <input type="checkbox" id="hindi" name="Sub" value="hin" />
+            <label for="hndi"> Hindi </label>
+        </div>
+
+        <div>
+            <label for="Profession">Choose your Profession : </label>
+            <select name="Profession" id="Profession">
+                <option>Select your option </option>
+                <option value="stu">Student</option>
+                <option value="dev">Developer</option>
+                <!-- <option value="dev" selected>Developer</option> -->
+            </select>
+        </div>
+
+        <div>
+            <label for="vol">Select your Volume : </label>
+            <input type="range" id="vol" min="0" max="100" step="10" name="vol" value="70"/>
+        </div>
+
+        <label for="feedback">Please provide your valuable feedback : </label>
+        <textarea id="feedback" name="feedback" placeholder="Write your feedback here"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
